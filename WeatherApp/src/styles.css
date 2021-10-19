@@ -1,0 +1,99 @@
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 60px;
+}
+p {
+  text-align: center;
+  margin-top: -10px;
+  font-size: 12px;
+}
+.weather-icon {
+  font-size: 120px;
+  color: yellow;
+}
+.current-weather {
+  text-transform: capitalize;
+  margin-top: -40px;
+  margin-left: 20px;
+}
+.celsius-fahrenheit {
+  font-size: 12px;
+  position: relative;
+  left: 85px;
+  top: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+.celsius-color {
+  color: #fffef8;
+}
+.fahrenheit {
+  color: #1e549f;
+}
+.temperature {
+  font-size: 80px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+.container {
+  font-family: "Roboto", sans-serif;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 60px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  );
+  color: #fffef8;
+}
+
+.current-location {
+  color: #ff0000;
+}
+.first {
+  margin-left: 90px;
+}
+.second {
+  text-align: center;
+  margin-top: 80px;
+  margin-left: -80px;
+  color: #000000;
+  line-height: 15px;
+  border-left: 1px solid #000000;
+  font-family: "PT Mono", monospace;
+}
+.value {
+  font-size: 12px;
+}
+.maxtemp,
+.mintemp {
+  font-size: 14px;
+  line-height: 15px;
+}
+.maxtemp {
+  font-weight: bold;
+}
+.weekday {
+  font-size: 20px;
+}
+.week-day-image {
+  font-size: 30px;
+}
+
+.week-days {
+  margin-top: 50px;
+}
+.days {
+  padding: 10px;
+  border: 1px solid #757a79;
+  border-radius: 5px;
+  margin: 0 3px;
+  text-align: center;
+}
