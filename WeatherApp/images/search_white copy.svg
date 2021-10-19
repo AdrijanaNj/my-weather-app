@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-5491.03,-3463.47)">
+        <g transform="matrix(3.1746,0,0,3.1746,12794.1,-633.111)">
+            <g id="ion-ios-search-strong" transform="matrix(0.957031,0,0,0.957031,-2300.47,1286.59)">
+                <path d="M17.5,18.625L17.25,19.063L24,25.876L21.875,28.001L15.125,21.188L14.687,21.501C13.187,22.439 11.374,23.064 9.499,23.064C4.249,23.064 -0.001,18.751 -0.001,13.501C-0.001,8.251 4.249,4.001 9.499,4.001C14.749,4.001 18.999,8.251 18.999,13.501C18.999,15.376 18.436,17.126 17.499,18.626L17.5,18.625ZM14.813,8.188C13.375,6.75 11.5,6 9.5,6C7.5,6 5.625,6.75 4.187,8.188C2.749,9.626 1.999,11.501 1.999,13.501C1.999,15.501 2.749,17.376 4.187,18.814C5.625,20.252 7.5,21.002 9.5,21.002C11.5,21.002 13.375,20.252 14.813,18.814C16.251,17.376 17.063,15.501 17.063,13.501C17.063,11.501 16.25,9.626 14.813,8.188Z" style="fill:white;fill-rule:nonzero;"/>
+            </g>
+        </g>
+    </g>
+</svg>
