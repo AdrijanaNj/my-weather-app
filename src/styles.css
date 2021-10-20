@@ -9,6 +9,10 @@ p {
   margin-top: -10px;
   font-size: 12px;
 }
+.link-to-GitHub {
+  text-align: left;
+  margin-left: 365px;
+}
 .weather-icon {
   font-size: 120px;
   color: yellow;
