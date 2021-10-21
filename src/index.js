@@ -42,6 +42,10 @@ function showTemperature(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   let description = document.querySelector("#current-weather");
   description.innerHTML = response.data.weather[0].description;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
   if (temperature < 10) {
