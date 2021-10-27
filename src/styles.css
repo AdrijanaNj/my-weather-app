@@ -10,6 +10,7 @@ p {
   font-size: 12px;
 }
 .link-to-GitHub {
+  margin-top: 20px;
   text-align: left;
   margin-left: 365px;
 }
@@ -32,8 +33,9 @@ p {
 a {
   text-decoration: none;
 }
-.celsius-color {
+.celsius .active {
   color: #fffef8;
+  cursor: default;
 }
 .fahrenheit {
   color: #1e549f;

@@ -48,12 +48,14 @@ function showTemperature(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#temperature");
+  celsiusTemperature = response.data.main.temp;
   if (temperature < 10) {
     temperatureElement.innerHTML = `0${temperature}`;
   } else {
     temperatureElement.innerHTML = `${temperature}`;
   }
 }
+let celsiusTemperature = null;
 function searchLocation(city) {
   let apiKey = "4b3503b2f08a729413c4d33ef1186004";
 
@@ -61,13 +63,14 @@ function searchLocation(city) {
 
   axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 }
-function searchCity() {
+function searchCity(event) {
+  event.preventDefault();
   let searchInput = document.querySelector("#search-input");
 
   searchLocation(searchInput.value);
 }
-let button = document.querySelector("#search-button");
-button.addEventListener("click", searchCity);
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", searchCity);
 
 function searchPosition(position) {
   let latitude = position.coords.latitude;
@@ -86,5 +89,25 @@ function getCurrentLocation(event) {
 }
 let locationButton = document.querySelector("#button-location");
 locationButton.addEventListener("click", getCurrentLocation);
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+}
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+}
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchLocation("Oslo");

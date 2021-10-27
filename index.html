@@ -27,35 +27,36 @@
   </head>
   <body>
     <div class="container">
-      <form >
-      <div class="input-group">
-        <input
-          type="search"
-          class="form-control"
-          placeholder="Search for a location"
-          aria-label="Recipient's username with two button addons"
-          id="search-input"
-        />
-        <button
-          class="btn btn-outline-secondary"
-          type="button"
-          id="search-button"
-        >
-          <img
-            src="images/search_white.svg"
-            alt="search-button-image"
-            width="20"
-          />
-        </button>
-        <button
-          class="btn btn-outline-secondary"
-          id="button-location"
-          type="button"
-        >
-          <i class="fas fa-map-marker-alt current-location"></i>
-        </button>
-        </form>
-      </div>
+      <form id="search-form">
+        <div class="row">
+          <div class="col-8">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Search for a location"
+              id="search-input"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="submit"
+              class="btn btn-outline-secondary"
+              id="search-button"
+              value=" Search "
+            />
+          </div>
+          <div class="col">
+            <button
+              class="btn btn-outline-secondary"
+              id="button-location"
+              type="button"
+            >
+              <i class="fas fa-map-marker-alt current-location"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
       <h1>Kristiansand</h1>
       <p>
         Saturday, 18 September
@@ -69,7 +70,7 @@
           <div class="current-weather" id="current-weather">Mostly Sunny</div>
           <div class="celsius-fahrenheit">
             <div class="celsius">
-              <a href="#" id="celsius" class="celsius-color"> °C | </a>
+              <a href="#" id="celsius" class="active"> °C | </a>
               <span class="fahrenheit">
                 <a href="#" id="fahrenheit"> °F </a>
               </span>
@@ -138,13 +139,14 @@
           <div class="mintemp">9°</div>
         </div>
       </div>
+      <div></div>
+      <p class="link-to-GitHub">
+        <a href="https://github.com/AdrijanaNj/my-weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Adrijana Njezic
+      </p>
     </div>
-    <p class="link-to-GitHub">
-      <a href="https://github.com/AdrijanaNj/my-weather-app" target="_blank"
-        >Open-source code</a
-      >
-      by Adrijana Njezic
-    </p>
     <script src="src/index.js"></script>
   </body>
 </html>
