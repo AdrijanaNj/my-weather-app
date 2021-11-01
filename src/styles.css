@@ -9,10 +9,13 @@ p {
   margin-top: -10px;
   font-size: 12px;
 }
-.link-to-GitHub {
-  margin-top: 20px;
-  text-align: left;
-  margin-left: 365px;
+
+footer {
+  font-size: 12px;
+  margin-top: 40px;
+  line-height: 18px;
+  text-align: center;
+  color: #fffef8;
 }
 .weather-icon img {
   width: 180px;
