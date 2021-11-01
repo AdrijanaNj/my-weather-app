@@ -14,15 +14,18 @@ p {
   text-align: left;
   margin-left: 365px;
 }
-.weather-icon {
-  font-size: 120px;
-  color: yellow;
+.weather-icon img {
+  width: 180px;
+  height: 180px;
+  margin-left: -34px;
+  margin-bottom: -16px;
 }
 .current-weather {
   text-transform: capitalize;
-  margin-top: -40px;
-  margin-left: 20px;
+  margin-top: -31px;
+  margin-left: -11px;
 }
+
 .celsius-fahrenheit {
   font-size: 12px;
   position: relative;

@@ -65,7 +65,9 @@
       </p>
       <div class="row">
         <div class="col first">
-          <div class="weather-icon" id="weather-icon">🌤</div>
+          <div class="weather-icon">
+            <img src="" alt="" id="weather-icon" class="current-icon" />
+          </div>
 
           <div class="current-weather" id="current-weather">Mostly Sunny</div>
           <div class="celsius-fahrenheit">
@@ -88,58 +90,22 @@
           <div class="value"><span id="humidity">81</span>%</div>
           <br />
           <div class="sunrise">Sunrise</div>
-          <div class="value">07:19</div>
+          <div class="value" id="sunrise">07:19</div>
           <br />
           <div class="sunset">Sunset</div>
-          <div class="value">19:21</div>
+          <div class="value" id="sunset">19:21</div>
         </div>
       </div>
 
-      <div class="row week-days">
-        <div class="col days">
-          <div class="week-day">SUN</div>
-          <div class="week-day-image">🌤</div>
-          <div class="maxtemp">13°</div>
-          <div class="mintemp">8°</div>
+      <div class="week-days" id="week-days">
+        <div class="week-day">SUN</div>
+        <div class="week-day-image">
+          <img src="" alt="" id="week-day-image" />
         </div>
-        <div class="col days">
-          <div class="week-day">MON</div>
-          <div class="week-day-image">🌥</div>
-          <div class="maxtemp">13°</div>
-          <div class="mintemp">9°</div>
-        </div>
-        <div class="col days">
-          <div class="week-day">TUE</div>
-          <div class="week-day-image">☀️</div>
-          <div class="maxtemp">16°</div>
-          <div class="mintemp">13°</div>
-        </div>
-        <div class="col days">
-          <div class="week-day">WED</div>
-          <div class="week-day-image">🌤</div>
-          <div class="maxtemp">16°</div>
-          <div class="mintemp">10°</div>
-        </div>
-        <div class="col days">
-          <div class="week-day">THU</div>
-          <div class="week-day-image">☀️</div>
-          <div class="maxtemp">16°</div>
-          <div class="mintemp">13°</div>
-        </div>
-        <div class="col days">
-          <div class="week-day">FRI</div>
-          <div class="week-day-image">🌨</div>
-          <div class="maxtemp">12°</div>
-          <div class="mintemp">8°</div>
-        </div>
-        <div class="col days">
-          <div class="week-day">SAT</div>
-          <div class="week-day-image">🌥</div>
-          <div class="maxtemp">15°</div>
-          <div class="mintemp">9°</div>
-        </div>
+        <div class="maxtemp">13°</div>
+        <div class="mintemp">8°</div>
       </div>
-      <div></div>
+
       <p class="link-to-GitHub">
         <a href="https://github.com/AdrijanaNj/my-weather-app" target="_blank"
           >Open-source code</a
